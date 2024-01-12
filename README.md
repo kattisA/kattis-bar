@@ -1,3 +1,28 @@
+# Kattis Bar App
+A fun site with drink recipes
+
+## Description
+
+A fun project.
+
+### Executing program
+
+* Run  `npm run dev`
+* Deploy [locally](http://localhost:3000/pokemon-search/)
+* For linting use:
+```
+npm run build
+```
+
+## Authors
+
+The application is written by Katarina Lejonlid for learning purposes.
+
+## Acknowledgments
+The images of the drinks are Dall-E generated
+
+
+# Next Documentation
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
