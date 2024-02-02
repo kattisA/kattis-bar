@@ -1,97 +1,170 @@
-import Image from 'next/image'
+import React from 'react';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Left upper corner
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Right corner
-          </a>
+    <main className="flex min-h-screen bg-cocktail-gradient flex-col items-center">
+        <h1 className="text-center text-2xl font-bold my-8">Kattis Bar</h1>
+
+        <div className="container mx-auto px-4 md:px-12 my-12">
+            <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">
+                        <img className="h-48 w-full object-cover md:w-48" src="/purple.png" alt="Blueberry drink" />
+                    </div>
+                    <div className="p-8">
+                        <div className="text-gray-900 font-bold text-xl mb-2"> Blueberry smash</div>
+                        <ul className="list-disc">
+                            <li>Blåbärs- och apelsincordial</li>
+                            <li>Lime</li>
+                            <li>Cider</li>
+                            <li>Mynta (dekoration)</li>
+                        </ul>
+                        <p className="text-gray-700 text-base line-clamp-3">Blåbärs och apelsincordialen ger en färsk
+                            smak till drinken och kan fungera både med eller utan alkohol. Toppas med mynta.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">
+                        <img className="h-48 w-full object-cover md:w-48" src="/aperol.png" alt="Aperol Spritz Drink" />
+                    </div>
+                    <div className="p-8">
+                        <div className="text-gray-900 font-bold text-xl mb-2"> Aperol Spritz</div>
+                        <ul className=" text-gray-700 list-disc">
+                            <li>Spritz cider</li>
+                            <li>Mousserande vin</li>
+                            <li>Apelsin</li>
+                        </ul>
+                        <p className="text-gray-700 text-base line-clamp-3">En klassisk drink som blandas
+                            med en smaksatt cider, enkelt, lätt och bra!</p>
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">
+                        <img className="h-48 w-full object-cover md:w-48" src="/mojito.png" alt="Mojito drink" />
+                    </div>
+                    <div className="p-8">
+                        <div className="text-gray-900 font-bold text-xl mb-2"> Mojito</div>
+                        <ul className="text-gray-700 list-disc">
+                            <li>Rom</li>
+                            <li>Sodavatten</li>
+                            <li>Limejuice</li>
+                            <li>Sockerlag</li>
+                            <li>Mynta (dekoration)</li>
+                        </ul>
+                        <p className="text-gray-700 text-base line-clamp-3">En klassiker, och det enda tillfället att älska mynta!</p>
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">
+                        <img className="h-48 w-full object-cover md:w-48" src="/champ.png" alt="Champange drink" />
+                    </div>
+                    <div className="p-8">
+                        <div className="text-gray-900 font-bold text-xl mb-2"> Bubbel</div>
+                        <p className="text-gray-700 text-base line-clamp-3">Bubbel eller
+                            mousserande vin kan ju avnjutas som det är såklart!.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
+                <div className="md:flex">
+                    <div className="md:flex-shrink-0">
+                        <img className="h-48 w-full object-cover md:w-48" src="/blue.png" alt="Blue drink" />
+                    </div>
+                    <div className="p-8">
+                        <div className="text-gray-900 font-bold text-xl mb-2"> Curacao drinks</div>
+                        <ul className="list-disc">
+                            <li>Rom</li>
+                            <li>Blue Curacao</li>
+                            <li>Cider eller soda </li>
+                        </ul>
+                        <p className="text-gray-700 text-base line-clamp-3">Curacao kan blandas med rom eller vodka
+                            och därefter med sodavatten eller någon smaksatt cider.</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      </div>
 
-      <h1 className="center">
-       Kattis BAR
-      </h1>
 
-      {/*<div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">*/}
-      {/*  <a*/}
-      {/*    href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"*/}
-      {/*    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    <h2 className={`mb-3 text-2xl font-semibold`}>*/}
-      {/*      Docs{' '}*/}
-      {/*      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">*/}
-      {/*        -&gt;*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>*/}
-      {/*      Find in-depth information about Next.js features and API.*/}
-      {/*    </p>*/}
-      {/*  </a>*/}
 
-      {/*  <a*/}
-      {/*    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"*/}
-      {/*    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    <h2 className={`mb-3 text-2xl font-semibold`}>*/}
-      {/*      Learn{' '}*/}
-      {/*      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">*/}
-      {/*        -&gt;*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>*/}
-      {/*      Learn about Next.js in an interactive course with&nbsp;quizzes!*/}
-      {/*    </p>*/}
-      {/*  </a>*/}
+        {/*<div className="container my-12 mx-auto px-4 md:px-12">
+            <div className="flex flex-col">  Changed to flex-col for vertical stacking
+                <div className="my-1 px-1 w-full">  Full width for single column
+                     Card
+                    <div className="max-w-sm w-full lg:max-w-full">
+                        <div
+                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                            style={{ backgroundImage: `url('/purple.png')` }} title="Woman holding a mug">
+                        </div>
+                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div className="mb-8">
+                                <p className="text-sm text-gray-600 flex items-center">
+                                    <svg className="fill-current text-gray-500 w-3 h-3 mr-2"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path
+                                            d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"/>
+                                    </svg>
+                                    Members only
+                                </p>
+                                <div className="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better
+                                    developer?
+                                </div>
+                                <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                                    exercitationem praesentium nihil.</p>
+                            </div>
+                            <div className="flex items-center">hej</div>
+                        </div>
+                    </div>
+                     End Card
+                </div>
 
-      {/*  <a*/}
-      {/*    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"*/}
-      {/*    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    <h2 className={`mb-3 text-2xl font-semibold`}>*/}
-      {/*      Templates{' '}*/}
-      {/*      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">*/}
-      {/*        -&gt;*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>*/}
-      {/*      Explore starter templates for Next.js.*/}
-      {/*    </p>*/}
-      {/*  </a>*/}
+                 Additional cards can be added here and they will stack vertically
+            </div>
+        </div>*/}
 
-      {/*  <a*/}
-      {/*    href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"*/}
-      {/*    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    <h2 className={`mb-3 text-2xl font-semibold`}>*/}
-      {/*      Deploy{' '}*/}
-      {/*      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">*/}
-      {/*        -&gt;*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*    <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>*/}
-      {/*      Instantly deploy your Next.js site to a shareable URL with Vercel.*/}
-      {/*    </p>*/}
-      {/*  </a>*/}
-      {/*</div>*/}
+     {/*   <div className="container my-12 mx-auto px-4 md:px-12">
+            <div className="flex flex-wrap -mx-1 lg:-mx-4">
+
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                    <div className="max-w-sm w-full lg:max-w-full lg:flex">
+                        <div
+                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                            style={{ backgroundImage: `url('/purple.png')` }} title="Woman holding a mug">
+                        </div>
+                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                            <div className="mb-8">
+                                <p className="text-sm text-gray-600 flex items-center">
+                                    <svg className="fill-current text-gray-500 w-3 h-3 mr-2"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <path
+                                            d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"/>
+                                    </svg>
+                                    Members only
+                                </p>
+                                <div className="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better
+                                    developer?
+                                </div>
+                                <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                                    exercitationem praesentium nihil.</p>
+                            </div>
+                            <div className="flex items-center">hej</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">tjena</div>
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">halloj</div>
+            </div>
+        </div>*/}
     </main>
   )
 }
