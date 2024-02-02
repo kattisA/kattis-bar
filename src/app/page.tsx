@@ -27,7 +27,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/aperol.png" alt="Aperol Spritz Drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="images/aperol.png" alt="Aperol Spritz Drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Aperol Spritz</div>
