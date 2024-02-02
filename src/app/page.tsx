@@ -9,7 +9,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/purple.png" alt="Blueberry drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="./purple.png" alt="Blueberry drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Blueberry smash</div>
@@ -27,7 +27,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="images/aperol.png" alt="Aperol Spritz Drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="./aperol.png" alt="Aperol Spritz Drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Aperol Spritz</div>
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/mojito.png" alt="Mojito drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="./mojito.png" alt="Mojito drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Mojito</div>
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/champ.png" alt="Champange drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="./champ.png" alt="Champange drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Bubbel</div>
@@ -74,11 +74,11 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/blue.PNG" alt="Blue drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="./blue.png" alt="Blue drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Curacao drinks</div>
-                        <ul className="list-disc">
+                        <ul className="text-gray-700 list-disc">
                             <li>Rom</li>
                             <li>Blue Curacao</li>
                             <li>Cider eller soda </li>
