@@ -13,7 +13,7 @@ export default function Home() {
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Blueberry smash</div>
-                        <ul className="list-disc">
+                        <ul className="text-gray-700 list-disc">
                             <li>Blåbärs- och apelsincordial</li>
                             <li>Lime</li>
                             <li>Cider</li>
@@ -31,7 +31,7 @@ export default function Home() {
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Aperol Spritz</div>
-                        <ul className=" text-gray-700 list-disc">
+                        <ul className="text-gray-700 list-disc">
                             <li>Spritz cider</li>
                             <li>Mousserande vin</li>
                             <li>Apelsin</li>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl mb-6">
                 <div className="md:flex">
                     <div className="md:flex-shrink-0">
-                        <img className="h-48 w-full object-cover md:w-48" src="/blue.png" alt="Blue drink" />
+                        <img className="h-48 w-full object-cover md:w-48" src="/blue.PNG" alt="Blue drink" />
                     </div>
                     <div className="p-8">
                         <div className="text-gray-900 font-bold text-xl mb-2"> Curacao drinks</div>
